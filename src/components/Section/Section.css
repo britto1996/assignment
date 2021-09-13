@@ -1,0 +1,229 @@
+div{
+    display: block;
+}
+
+form{
+    display: block;
+}
+
+.section__container{
+    background-color: #1C0732;
+    padding: 160px 35px 70px 35px;
+     display: grid;
+     grid-template-areas: 'copy'
+     'contents';
+     gap: 40px;
+     padding: 40px 24px;
+     justify-content: center;
+     align-items: center;
+    
+}
+
+
+@media(min-width:992px){
+    .section__container{
+        gap: 80px;
+        max-width: 100%;
+        grid-template-columns: minmax(352px, 50%) minmax(480px, 50%);
+        grid-template-areas: 'copy contents';
+        justify-content: flex-start;
+        padding: 120px 80px;
+    }
+}
+
+.sidebar__list{
+    grid-area: copy;
+}
+
+.header1__sidebar__list{
+    margin: 24px 0;
+    color: #000000;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.25;
+    margin: 16px 0;
+    text-align: inherit;
+    color: #FFFFFF;
+}
+
+
+@media(min-width:992px){
+    .header1__sidebar__list{
+        font-size: 48px;
+        line-height: 1.1666666666666667;
+    }
+}
+
+
+.para1__sidebar__list{
+    margin: 24px 0;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5555555555555556;
+    margin: 16px 0;
+    text-align: inherit;
+    color: #A89CB4;
+}
+
+@media(min-width:992px){
+    .para1__sidebar__list{
+        font-size: 24px;
+        line-height: 1.6666666666666667;
+    }
+}
+
+.form__container{
+    max-width: 420px;
+    margin-top: 30px;
+}
+
+.input__forms{
+    margin: 0;
+}
+
+.email__input{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 225px;
+    flex-grow: 9999;
+    margin-bottom: 8px;
+    display: grid;
+    row-gap: 8px;
+    position: relative;
+}
+
+.email{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 17px 20px 17px 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+    -webkit-transition: border-color 0.3s,
+    background 0.3s;
+    transition: border-color 0.3s,
+    background 0.3s;
+    width: 100%;
+    appearance: none;
+    background-color: #352446;
+    border-color: #352446;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+
+
+.form__button__gap{
+    opacity: 0;
+    transform: translateY(10px) translateZ(0);
+    margin: 0 0 1rem;
+    text-align: left;
+}
+
+
+.main__btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    position: relative;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    vertical-align: middle;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    border-radius: 5px;
+    -webkit-transition: background 0.3s,
+    border 0.3s,
+    color 0.3s,
+    box-shadow 0.3s;
+    transition: background 0.3s,
+    border 0.3s,
+    color 0.3s,
+    box-shadow 0.3s;
+    padding: 16px 24px;
+    background-color: #52BD94;
+    color: #FFFFFF;
+    border: 2px solid #52BD94;
+    max-height: 56px;
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+
+.create__account__btn{
+    margin: 24px 0;
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    position: relative;
+    cursor: pointer;
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 6px 0;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    -webkit-transition: color 0.6s 0.1s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: color 0.6s 0.1s cubic-bezier(0.25, 1, 0.5, 1);
+    color: #52BD94;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    -webkit-justify-content: left;
+    justify-content: left;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-top: 8px;
+}
+
+.img__container{
+    justify-items: center;
+    display: grid;
+    grid-area: contents;
+    width: 100%;
+}
+
+@media(min-width:992px){
+    .img__container{
+        min-width: 460px;
+    }
+}
+
+.image1{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
